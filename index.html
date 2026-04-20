@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLC Expert</title>
+  <meta name="theme-color" content="#1976d2">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="PLC Expert">
+  <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIj4KICA8cmVjdCB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgcng9IjI0IiBmaWxsPSIjMTk3NmQyIi8+CiAgPHRleHQgeD0iOTYiIHk9IjExMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iYm9sZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPlBMQzwvdGV4dD4KPC9zdmc+">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIj4KICA8cmVjdCB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgcng9IjI0IiBmaWxsPSIjMTk3NmQyIi8+CiAgPHRleHQgeD0iOTYiIHk9IjExMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iYm9sZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPlBMQzwvdGV4dD4KPC9zdmc+">
+  
+  <!-- Manifest intégré pour éviter 404 -->
+  <link rel="manifest" href="data:application/json,{&quot;name&quot;:&quot;PLC Expert&quot;,&quot;short_name&quot;:&quot;PLC Expert&quot;,&quot;start_url&quot;:&quot;https://meddahuhadj.github.io/HADJ-PLC-EXPERT/&quot;,&quot;display&quot;:&quot;standalone&quot;,&quot;background_color&quot;:&quot;#0f172a&quot;,&quot;theme_color&quot;:&quot;#1976d2&quot;,&quot;icons&quot;:[{&quot;src&quot;:&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIj4KICA8cmVjdCB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgcng9IjI0IiBmaWxsPSIjMTk3NmQyIi8+CiAgPHRleHQgeD0iOTYiIHk9IjExMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjcyIiBmb250LXdlaWdodD0iYm9sZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPlBMQzwvdGV4dD4KPC9zdmc+&quot;,&quot;sizes&quot;:&quot;192x192&quot;,&quot;type&quot;:&quot;image/svg+xml&quot;}]}">
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); 
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .container { 
+      text-align: center; 
+      max-width: 500px;
+    }
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 30px;
+      background: #1976d2;
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      font-weight: bold;
+      box-shadow: 0 10px 40px rgba(25, 118, 210, 0.3);
+    }
+    h1 { 
+      color: #1976d2; 
+      font-size: 2.5rem; 
+      margin-bottom: 10px;
+    }
+    p { 
+      opacity: 0.8; 
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(25, 118, 210, 0.2);
+      border: 1px solid #1976d2;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+    .install-hint {
+      margin-top: 40px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">PLC</div>
+    <h1>PLC Expert</h1>
+    <p>Assistant Automatisme Industriel</p>
+    <div class="badge">✓ Version iOS Compatible</div>
+    
+    <div class="install-hint">
+      <strong>Installer sur iPhone :</strong><br>
+      1. Bouton Partager ↓<br>
+      2. "Sur l'écran d'accueil"<br>
+      3. "Ajouter"
+    </div>
+  </div>
+  
+  <script>
+    // Aucun Service Worker - 100% compatible iOS
+    console.log('PLC Expert iOS Standalone');
+    
+    // Détecte si lancé en mode standalone
+    if (window.navigator.standalone === true) {
+      document.querySelector('.install-hint').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
